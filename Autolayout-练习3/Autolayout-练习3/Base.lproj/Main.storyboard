@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eJV-Q9-CH0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="oep-hG-3nT">
+            <objects>
+                <viewController id="eJV-Q9-CH0" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RvI-LR-gyX"/>
+                        <viewControllerLayoutGuide type="bottom" id="42f-5k-Gp2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xpc-iQ-abD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFT-2D-two" userLabel="粉色">
+                                <rect key="frame" x="20" y="40" width="240" height="157"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="014_1_001.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="exI-rw-j1N">
+                                        <rect key="frame" x="20" y="20" width="200" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="77" id="hCc-zt-ygP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaS-ae-tEm">
+                                        <rect key="frame" x="20" y="117" width="200" height="20.5"/>
+                                        <color key="backgroundColor" red="0.26047665250000002" green="1" blue="0.26945973039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93982863400000005" green="0.338274994" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="C84-QZ-yHm"/>
+                                    <constraint firstAttribute="trailing" secondItem="exI-rw-j1N" secondAttribute="trailing" constant="20" id="LS6-ce-1Mk"/>
+                                    <constraint firstAttribute="trailing" secondItem="HaS-ae-tEm" secondAttribute="trailing" constant="20" id="McE-kj-E1a"/>
+                                    <constraint firstAttribute="bottom" secondItem="HaS-ae-tEm" secondAttribute="bottom" constant="20" id="Pwd-hN-4aF"/>
+                                    <constraint firstItem="HaS-ae-tEm" firstAttribute="leading" secondItem="mFT-2D-two" secondAttribute="leading" constant="20" id="ZEy-GS-4fZ"/>
+                                    <constraint firstItem="exI-rw-j1N" firstAttribute="leading" secondItem="mFT-2D-two" secondAttribute="leading" constant="20" id="bCX-Hr-7Ye"/>
+                                    <constraint firstItem="exI-rw-j1N" firstAttribute="top" secondItem="mFT-2D-two" secondAttribute="top" constant="20" id="cLV-vz-0hW"/>
+                                    <constraint firstItem="HaS-ae-tEm" firstAttribute="top" secondItem="exI-rw-j1N" secondAttribute="bottom" constant="20" id="cxl-AX-JSY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kll-IK-n2N" userLabel="蓝色">
+                                <rect key="frame" x="20" y="197" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="5gx-pB-Unr"/>
+                                    <constraint firstAttribute="width" constant="240" id="EPP-Ua-ukV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mFT-2D-two" firstAttribute="leading" secondItem="Xpc-iQ-abD" secondAttribute="leading" constant="20" id="4gk-Lm-Iaf"/>
+                            <constraint firstItem="mFT-2D-two" firstAttribute="top" secondItem="RvI-LR-gyX" secondAttribute="bottom" constant="20" id="PMr-nO-3kh"/>
+                            <constraint firstItem="Kll-IK-n2N" firstAttribute="leading" secondItem="mFT-2D-two" secondAttribute="leading" id="Q0V-LF-Nlp"/>
+                            <constraint firstItem="Kll-IK-n2N" firstAttribute="top" secondItem="mFT-2D-two" secondAttribute="bottom" id="Res-pR-fRy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueView" destination="Kll-IK-n2N" id="dIa-CW-hIf"/>
+                        <outlet property="blueViewWidthConstraint" destination="EPP-Ua-ukV" id="0U2-h8-Fsm"/>
+                        <outlet property="intervalConstraint" destination="Res-pR-fRy" id="039-hY-h0p"/>
+                        <outlet property="label" destination="HaS-ae-tEm" id="QaC-Qb-1xq"/>
+                        <outlet property="pinkView" destination="mFT-2D-two" id="1HB-ic-Yuo"/>
+                        <outlet property="pinkViewWidthConstraint" destination="C84-QZ-yHm" id="tZC-la-EvP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4b1-xg-4kS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-673" y="243"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="014_1_001.jpg" width="600" height="400"/>
+    </resources>
+</document>
